@@ -1311,12 +1311,12 @@ $EndComp
 $Comp
 L Device:D_Small D55
 U 1 1 62C3E803
-P 6250 4500
-F 0 "D55" V 6296 4430 50  0000 R CNN
-F 1 "SOD123" V 6205 4430 50  0000 R CNN
-F 2 "sanproject-keyboard-part:DIODE_1206_SawnsProjects" V 6250 4500 50  0001 C CNN
-F 3 "~" V 6250 4500 50  0001 C CNN
-	1    6250 4500
+P 6250 4450
+F 0 "D55" V 6296 4380 50  0000 R CNN
+F 1 "SOD123" V 6205 4380 50  0000 R CNN
+F 2 "sanproject-keyboard-part:DIODE_1206_SawnsProjects" V 6250 4450 50  0001 C CNN
+F 3 "~" V 6250 4450 50  0001 C CNN
+	1    6250 4450
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1377,8 +1377,6 @@ Wire Wire Line
 	4650 4300 4650 4350
 Wire Wire Line
 	5050 4300 5050 4400
-Wire Wire Line
-	6250 4300 6250 4400
 Wire Wire Line
 	1250 3300 1250 4100
 Connection ~ 1250 3300
@@ -2146,11 +2144,8 @@ Wire Wire Line
 	7250 3300 7250 4100
 Connection ~ 7250 3300
 Connection ~ 7250 4100
-Connection ~ 5850 4600
 Wire Wire Line
-	5850 4600 6250 4600
-Wire Wire Line
-	5450 4550 7050 4550
+	5450 4550 6250 4550
 Wire Wire Line
 	5850 4300 5850 4400
 $Comp
@@ -2463,10 +2458,15 @@ Wire Wire Line
 	2650 5400 5450 5400
 Wire Wire Line
 	1450 5350 3050 5350
-Text GLabel 8450 1300 0    50   Input ~ 0
-C7
 Text GLabel 8450 1100 0    50   Input ~ 0
+C7
+Text GLabel 8450 1300 0    50   Input ~ 0
 MX15
 Text GLabel 7050 1900 0    50   Input ~ 0
 MX15
+Connection ~ 6250 4550
+Wire Wire Line
+	6250 4550 7050 4550
+Wire Wire Line
+	6250 4300 6250 4350
 $EndSCHEMATC
